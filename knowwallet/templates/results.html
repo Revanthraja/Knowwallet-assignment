@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chat with ChatGPT</h1>
+      <div class="message-container">
+        <div class="user-message">
+          <span class="message-label">You:</span>
+          <span class="message-text">{{ message }}</span>
+        </div>
+        <div class="bot-message">
+          <span class="message-label">ChatGPT:</span>
+          <span class="message-text">{{ response }}</span>
+        </div>
+      </div>
+      <a href="/">Back to home</a>
+    </div>
+  </body>
+</html>
